@@ -787,6 +787,7 @@ public class NotificationStackScrollLayout extends ViewGroup implements ScrollAd
         mBackgroundColor = mContext.getColor(R.color.recents_dismiss_all_background_color);
         mIconColor = mContext.getColor(R.color.recents_dismiss_all_icon_color);
         updateBackgroundDimming();
+        mShelf.onUiModeChanged();
         StatusBar.updateDismissAllButton(mIconColor);
     }
 
